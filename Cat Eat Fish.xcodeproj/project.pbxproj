@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B84C134B224DF51600F8AC43 /* button_push.wav in Resources */ = {isa = PBXBuildFile; fileRef = B84C1349224DF51500F8AC43 /* button_push.wav */; };
+		B84C134C224DF51600F8AC43 /* start.wav in Resources */ = {isa = PBXBuildFile; fileRef = B84C134A224DF51600F8AC43 /* start.wav */; };
+		B84C1350224DF54700F8AC43 /* soundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84C134F224DF54700F8AC43 /* soundController.swift */; };
+		B84C1352224DFD0400F8AC43 /* music-inGame.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1351224DFD0400F8AC43 /* music-inGame.mp3 */; };
+		B84C1355224DFF9800F8AC43 /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1353224DFF9800F8AC43 /* gameOver.mp3 */; };
+		B84C1356224DFF9800F8AC43 /* catLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1354224DFF9800F8AC43 /* catLove.mp3 */; };
+		B84C1358224DFFC600F8AC43 /* startingMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1357224DFFC600F8AC43 /* startingMusic.mp3 */; };
+		B88016E7224B091800BC0A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88016E6224B091800BC0A1E /* AppDelegate.swift */; };
+		B88016E9224B091800BC0A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88016E8224B091800BC0A1E /* ViewController.swift */; };
+		B88016EC224B091800BC0A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88016EA224B091800BC0A1E /* Main.storyboard */; };
+		B88016EE224B091A00BC0A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88016ED224B091A00BC0A1E /* Assets.xcassets */; };
+		B88016F1224B091A00BC0A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88016EF224B091A00BC0A1E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B84C1349224DF51500F8AC43 /* button_push.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = button_push.wav; sourceTree = "<group>"; };
+		B84C134A224DF51600F8AC43 /* start.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = start.wav; sourceTree = "<group>"; };
+		B84C134F224DF54700F8AC43 /* soundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundController.swift; sourceTree = "<group>"; };
+		B84C1351224DFD0400F8AC43 /* music-inGame.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-inGame.mp3"; sourceTree = "<group>"; };
+		B84C1353224DFF9800F8AC43 /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
+		B84C1354224DFF9800F8AC43 /* catLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catLove.mp3; sourceTree = "<group>"; };
+		B84C1357224DFFC600F8AC43 /* startingMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startingMusic.mp3; sourceTree = "<group>"; };
+		B88016E3224B091800BC0A1E /* Cat Eat Fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Eat Fish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B88016E6224B091800BC0A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B88016E8224B091800BC0A1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B88016EB224B091800BC0A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B88016ED224B091A00BC0A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B88016F0224B091A00BC0A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B88016F2224B091A00BC0A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B88016E0224B091800BC0A1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B84C134E224DF52E00F8AC43 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				B84C1357224DFFC600F8AC43 /* startingMusic.mp3 */,
+				B84C1354224DFF9800F8AC43 /* catLove.mp3 */,
+				B84C1353224DFF9800F8AC43 /* gameOver.mp3 */,
+				B84C1351224DFD0400F8AC43 /* music-inGame.mp3 */,
+				B84C1349224DF51500F8AC43 /* button_push.wav */,
+				B84C134A224DF51600F8AC43 /* start.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		B88016DA224B091800BC0A1E = {
+			isa = PBXGroup;
+			children = (
+				B88016E5224B091800BC0A1E /* Cat Eat Fish */,
+				B88016E4224B091800BC0A1E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B88016E4224B091800BC0A1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B88016E3224B091800BC0A1E /* Cat Eat Fish.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B88016E5224B091800BC0A1E /* Cat Eat Fish */ = {
+			isa = PBXGroup;
+			children = (
+				B88016E6224B091800BC0A1E /* AppDelegate.swift */,
+				B88016E8224B091800BC0A1E /* ViewController.swift */,
+				B84C134F224DF54700F8AC43 /* soundController.swift */,
+				B88016EA224B091800BC0A1E /* Main.storyboard */,
+				B88016ED224B091A00BC0A1E /* Assets.xcassets */,
+				B88016EF224B091A00BC0A1E /* LaunchScreen.storyboard */,
+				B88016F2224B091A00BC0A1E /* Info.plist */,
+				B84C134E224DF52E00F8AC43 /* sounds */,
+			);
+			path = "Cat Eat Fish";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B88016E2224B091800BC0A1E /* Cat Eat Fish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B88016F5224B091A00BC0A1E /* Build configuration list for PBXNativeTarget "Cat Eat Fish" */;
+			buildPhases = (
+				B88016DF224B091800BC0A1E /* Sources */,
+				B88016E0224B091800BC0A1E /* Frameworks */,
+				B88016E1224B091800BC0A1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cat Eat Fish";
+			productName = "Cat Eat Fish";
+			productReference = B88016E3224B091800BC0A1E /* Cat Eat Fish.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B88016DB224B091800BC0A1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Yulibar Husni";
+				TargetAttributes = {
+					B88016E2224B091800BC0A1E = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = B88016DE224B091800BC0A1E /* Build configuration list for PBXProject "Cat Eat Fish" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B88016DA224B091800BC0A1E;
+			productRefGroup = B88016E4224B091800BC0A1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B88016E2224B091800BC0A1E /* Cat Eat Fish */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B88016E1224B091800BC0A1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B88016F1224B091A00BC0A1E /* LaunchScreen.storyboard in Resources */,
+				B84C1352224DFD0400F8AC43 /* music-inGame.mp3 in Resources */,
+				B84C1355224DFF9800F8AC43 /* gameOver.mp3 in Resources */,
+				B88016EE224B091A00BC0A1E /* Assets.xcassets in Resources */,
+				B84C134B224DF51600F8AC43 /* button_push.wav in Resources */,
+				B84C134C224DF51600F8AC43 /* start.wav in Resources */,
+				B88016EC224B091800BC0A1E /* Main.storyboard in Resources */,
+				B84C1356224DFF9800F8AC43 /* catLove.mp3 in Resources */,
+				B84C1358224DFFC600F8AC43 /* startingMusic.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B88016DF224B091800BC0A1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B84C1350224DF54700F8AC43 /* soundController.swift in Sources */,
+				B88016E9224B091800BC0A1E /* ViewController.swift in Sources */,
+				B88016E7224B091800BC0A1E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B88016EA224B091800BC0A1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B88016EB224B091800BC0A1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B88016EF224B091A00BC0A1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B88016F0224B091A00BC0A1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B88016F3224B091A00BC0A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B88016F4224B091A00BC0A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B88016F6224B091A00BC0A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LG953FVPQT;
+				INFOPLIST_FILE = "Cat Eat Fish/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YulibarHusni.Cat-Eat-Fish";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B88016F7224B091A00BC0A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LG953FVPQT;
+				INFOPLIST_FILE = "Cat Eat Fish/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "YulibarHusni.Cat-Eat-Fish";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B88016DE224B091800BC0A1E /* Build configuration list for PBXProject "Cat Eat Fish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88016F3224B091A00BC0A1E /* Debug */,
+				B88016F4224B091A00BC0A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B88016F5224B091A00BC0A1E /* Build configuration list for PBXNativeTarget "Cat Eat Fish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88016F6224B091A00BC0A1E /* Debug */,
+				B88016F7224B091A00BC0A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B88016DB224B091800BC0A1E /* Project object */;
+}

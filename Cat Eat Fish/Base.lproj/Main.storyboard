@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cat_Eat_Fish" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainCat" translatesAutoresizingMaskIntoConstraints="NO" id="LcC-y7-dyE">
+                                <rect key="frame" x="0.0" y="70" width="385" height="319"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LcC-y7-dyE" secondAttribute="height" multiplier="414:343" id="7cu-fg-bR7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundTable" translatesAutoresizingMaskIntoConstraints="NO" id="EhT-Lq-XS7">
+                                <rect key="frame" x="0.0" y="270" width="375" height="397"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catPaw" translatesAutoresizingMaskIntoConstraints="NO" id="sCK-BZ-XwE">
+                                <rect key="frame" x="235" y="215" width="120" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="b5m-LT-btJ"/>
+                                    <constraint firstAttribute="width" constant="120" id="vFp-1N-ShA"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catPaw" translatesAutoresizingMaskIntoConstraints="NO" id="5jg-JQ-pkG">
+                                <rect key="frame" x="20" y="215" width="120" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="K3S-p8-3Rk"/>
+                                    <constraint firstAttribute="height" constant="128" id="wuA-0Q-Dm7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodFish" translatesAutoresizingMaskIntoConstraints="NO" id="6Do-f0-Mf6">
+                                <rect key="frame" x="0.0" y="348" width="375" height="128.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Do-f0-Mf6" secondAttribute="height" multiplier="187:64" id="6kT-bJ-IFF"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EV-l6-tpY">
+                                <rect key="frame" x="0.0" y="278.5" width="375" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2EV-l6-tpY" secondAttribute="height" multiplier="375:163" constant="-82.822085889570587" id="1j5-bD-RXd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <state key="normal" title="Tap here to play!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QUQ-e8-CCg"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvJ-hN-ta8" userLabel="gameOverWindow" propertyAccessControl="all">
+                                <rect key="frame" x="-20" y="200.5" width="415" height="266"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="window" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-HZ-DAk">
+                                        <rect key="frame" x="20" y="3" width="374" height="261"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Game Over!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP1-vl-IEG">
+                                        <rect key="frame" x="81" y="11" width="253" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="50"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8P-dQ-Cba">
+                                        <rect key="frame" x="220" y="91" width="147" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XK-3R-O4b">
+                                        <rect key="frame" x="220" y="131" width="147" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vj-uA-LhS">
+                                        <rect key="frame" x="116" y="91" width="84" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi-Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tG1-i5-m1i">
+                                        <rect key="frame" x="81" y="130" width="119" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEw-r9-Zdx">
+                                        <rect key="frame" x="182" y="190" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="retryButton"/>
+                                        <connections>
+                                            <action selector="startupButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t7H-2p-Y7a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="415" id="8Cv-Rm-nnv"/>
+                                    <constraint firstAttribute="height" constant="266" id="fZ6-hl-gMJ"/>
+                                </constraints>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pph-SR-enY">
+                                <rect key="frame" x="129" y="26" width="117" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pph-SR-enY" secondAttribute="height" multiplier="117:40" id="oDq-0y-WqM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B55-K6-RgO">
+                                <rect key="frame" x="10" y="479.5" width="355" height="177.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE1-5H-j0i" userLabel="fishButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="177.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="AE1-5H-j0i" secondAttribute="height" multiplier="1:1" id="Xpk-LN-cCF"/>
+                                        </constraints>
+                                        <state key="normal" image="fishButton"/>
+                                        <connections>
+                                            <action selector="foodButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGI-J1-Tr2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSY-o6-eH8" userLabel="noFishButton">
+                                        <rect key="frame" x="177.5" y="0.0" width="177.5" height="177.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TSY-o6-eH8" secondAttribute="height" multiplier="1:1" id="ANs-kA-JTf"/>
+                                        </constraints>
+                                        <state key="normal" image="notFishButton"/>
+                                        <connections>
+                                            <action selector="notFoodButton:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B0G-BZ-S3v"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B55-K6-RgO" secondAttribute="height" multiplier="2:1" id="FBa-jP-qnZ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="B55-K6-RgO" secondAttribute="bottom" constant="10" id="4Fe-BD-t2a"/>
+                            <constraint firstItem="5jg-JQ-pkG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7ZI-84-zFW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pph-SR-enY" secondAttribute="bottom" constant="601" id="7gs-5q-UU2"/>
+                            <constraint firstItem="EhT-Lq-XS7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="7jQ-uq-oiC"/>
+                            <constraint firstAttribute="trailing" secondItem="B55-K6-RgO" secondAttribute="trailing" constant="10" id="Hd0-3i-PhD"/>
+                            <constraint firstItem="pph-SR-enY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jgn-bW-qaz"/>
+                            <constraint firstItem="B55-K6-RgO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="N2a-zP-Nqe"/>
+                            <constraint firstAttribute="bottom" secondItem="6Do-f0-Mf6" secondAttribute="bottom" constant="190.5" id="OnW-eB-EtH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LcC-y7-dyE" secondAttribute="trailing" constant="-10" id="PCu-ou-ODm"/>
+                            <constraint firstItem="5jg-JQ-pkG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="195" id="ShE-qi-gYe"/>
+                            <constraint firstItem="EhT-Lq-XS7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="U4x-GI-7ID"/>
+                            <constraint firstItem="B55-K6-RgO" firstAttribute="top" secondItem="2EV-l6-tpY" secondAttribute="bottom" constant="2" id="UYX-ug-Lcd"/>
+                            <constraint firstItem="2EV-l6-tpY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VTE-WU-iHG"/>
+                            <constraint firstItem="LcC-y7-dyE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Vy8-jT-mBF"/>
+                            <constraint firstItem="sCK-BZ-XwE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="195" id="YUK-Gc-WXp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Do-f0-Mf6" secondAttribute="trailing" id="Yui-IP-kZB"/>
+                            <constraint firstItem="EhT-Lq-XS7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="a7S-fx-5Ss"/>
+                            <constraint firstItem="2EV-l6-tpY" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dbm-WM-DER"/>
+                            <constraint firstItem="EhT-Lq-XS7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dxY-pH-k1k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sCK-BZ-XwE" secondAttribute="trailing" constant="20" id="kex-Ul-Djk"/>
+                            <constraint firstItem="LcC-y7-dyE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kzY-N4-Cx6"/>
+                            <constraint firstItem="mvJ-hN-ta8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="l0j-Ff-6GN"/>
+                            <constraint firstItem="mvJ-hN-ta8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r4z-Ev-Amv"/>
+                            <constraint firstItem="6Do-f0-Mf6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u4Z-jo-wcK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="catHeadOutlet" destination="LcC-y7-dyE" id="hM6-4z-PCA"/>
+                        <outlet property="catPawOutletL" destination="5jg-JQ-pkG" id="bpW-EA-uwe"/>
+                        <outlet property="catPawOutletR" destination="sCK-BZ-XwE" id="aAO-W1-Osu"/>
+                        <outlet property="foodButtonOutlet" destination="AE1-5H-j0i" id="2lM-pJ-DPT"/>
+                        <outlet property="foodOutlet" destination="6Do-f0-Mf6" id="p36-mD-fvC"/>
+                        <outlet property="gameOverHiScoreOutlet" destination="1XK-3R-O4b" id="UfO-oM-YOB"/>
+                        <outlet property="gameOverOutlet" destination="mvJ-hN-ta8" id="voK-vC-ysx"/>
+                        <outlet property="gameOverScoreSessionOutlet" destination="j8P-dQ-Cba" id="gjk-7b-bkO"/>
+                        <outlet property="notFoodButtonOutlet" destination="TSY-o6-eH8" id="jc2-5X-fcA"/>
+                        <outlet property="scoreOutlet" destination="pph-SR-enY" id="jKh-hT-SWU"/>
+                        <outlet property="tapToPlayOutlet" destination="2EV-l6-tpY" id="oWk-Ju-4dt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="7"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundTable" width="1081" height="1176"/>
+        <image name="catPaw" width="318" height="253"/>
+        <image name="fishButton" width="208" height="207"/>
+        <image name="foodFish" width="1018" height="430"/>
+        <image name="mainCat" width="954" height="869"/>
+        <image name="notFishButton" width="208" height="208"/>
+        <image name="retryButton" width="127" height="126"/>
+        <image name="window" width="905" height="633"/>
+    </resources>
+</document>
