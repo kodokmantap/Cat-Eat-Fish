@@ -14,6 +14,8 @@
 		B84C1355224DFF9800F8AC43 /* gameOver.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1353224DFF9800F8AC43 /* gameOver.mp3 */; };
 		B84C1356224DFF9800F8AC43 /* catLove.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1354224DFF9800F8AC43 /* catLove.mp3 */; };
 		B84C1358224DFFC600F8AC43 /* startingMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B84C1357224DFFC600F8AC43 /* startingMusic.mp3 */; };
+		B84C135A224EA64C00F8AC43 /* GKTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84C1359224EA64C00F8AC43 /* GKTestViewController.swift */; };
+		B84C135D224EA6FD00F8AC43 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84C135C224EA6FD00F8AC43 /* GameKit.framework */; };
 		B88016E7224B091800BC0A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88016E6224B091800BC0A1E /* AppDelegate.swift */; };
 		B88016E9224B091800BC0A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88016E8224B091800BC0A1E /* ViewController.swift */; };
 		B88016EC224B091800BC0A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88016EA224B091800BC0A1E /* Main.storyboard */; };
@@ -29,7 +31,9 @@
 		B84C1353224DFF9800F8AC43 /* gameOver.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameOver.mp3; sourceTree = "<group>"; };
 		B84C1354224DFF9800F8AC43 /* catLove.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = catLove.mp3; sourceTree = "<group>"; };
 		B84C1357224DFFC600F8AC43 /* startingMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = startingMusic.mp3; sourceTree = "<group>"; };
-		B88016E3224B091800BC0A1E /* Cat Eat Fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Eat Fish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B84C1359224EA64C00F8AC43 /* GKTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GKTestViewController.swift; sourceTree = "<group>"; };
+		B84C135C224EA6FD00F8AC43 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B88016E3224B091800BC0A1E /* Cat Just Eat Fish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat Just Eat Fish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B88016E6224B091800BC0A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B88016E8224B091800BC0A1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B88016EB224B091800BC0A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84C135D224EA6FD00F8AC43 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,43 +67,53 @@
 			path = sounds;
 			sourceTree = "<group>";
 		};
+		B84C135B224EA6FC00F8AC43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B84C135C224EA6FD00F8AC43 /* GameKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B88016DA224B091800BC0A1E = {
 			isa = PBXGroup;
 			children = (
-				B88016E5224B091800BC0A1E /* Cat Eat Fish */,
+				B88016E5224B091800BC0A1E /* Cat Just Eat Fish */,
 				B88016E4224B091800BC0A1E /* Products */,
+				B84C135B224EA6FC00F8AC43 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B88016E4224B091800BC0A1E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B88016E3224B091800BC0A1E /* Cat Eat Fish.app */,
+				B88016E3224B091800BC0A1E /* Cat Just Eat Fish.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B88016E5224B091800BC0A1E /* Cat Eat Fish */ = {
+		B88016E5224B091800BC0A1E /* Cat Just Eat Fish */ = {
 			isa = PBXGroup;
 			children = (
 				B88016E6224B091800BC0A1E /* AppDelegate.swift */,
 				B88016E8224B091800BC0A1E /* ViewController.swift */,
 				B84C134F224DF54700F8AC43 /* soundController.swift */,
 				B88016EA224B091800BC0A1E /* Main.storyboard */,
+				B84C1359224EA64C00F8AC43 /* GKTestViewController.swift */,
 				B88016ED224B091A00BC0A1E /* Assets.xcassets */,
 				B88016EF224B091A00BC0A1E /* LaunchScreen.storyboard */,
 				B88016F2224B091A00BC0A1E /* Info.plist */,
 				B84C134E224DF52E00F8AC43 /* sounds */,
 			);
-			path = "Cat Eat Fish";
+			path = "Cat Just Eat Fish";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B88016E2224B091800BC0A1E /* Cat Eat Fish */ = {
+		B88016E2224B091800BC0A1E /* Cat Just Eat Fish */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B88016F5224B091A00BC0A1E /* Build configuration list for PBXNativeTarget "Cat Eat Fish" */;
+			buildConfigurationList = B88016F5224B091A00BC0A1E /* Build configuration list for PBXNativeTarget "Cat Just Eat Fish" */;
 			buildPhases = (
 				B88016DF224B091800BC0A1E /* Sources */,
 				B88016E0224B091800BC0A1E /* Frameworks */,
@@ -108,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = "Cat Eat Fish";
+			name = "Cat Just Eat Fish";
 			productName = "Cat Eat Fish";
-			productReference = B88016E3224B091800BC0A1E /* Cat Eat Fish.app */;
+			productReference = B88016E3224B091800BC0A1E /* Cat Just Eat Fish.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -125,10 +140,15 @@
 				TargetAttributes = {
 					B88016E2224B091800BC0A1E = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = B88016DE224B091800BC0A1E /* Build configuration list for PBXProject "Cat Eat Fish" */;
+			buildConfigurationList = B88016DE224B091800BC0A1E /* Build configuration list for PBXProject "Cat Just Eat Fish" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -141,7 +161,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B88016E2224B091800BC0A1E /* Cat Eat Fish */,
+				B88016E2224B091800BC0A1E /* Cat Just Eat Fish */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +192,7 @@
 			files = (
 				B84C1350224DF54700F8AC43 /* soundController.swift in Sources */,
 				B88016E9224B091800BC0A1E /* ViewController.swift in Sources */,
+				B84C135A224EA64C00F8AC43 /* GKTestViewController.swift in Sources */,
 				B88016E7224B091800BC0A1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,12 +341,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG953FVPQT;
-				INFOPLIST_FILE = "Cat Eat Fish/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Cat Just Eat Fish/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "YulibarHusni.Cat-Eat-Fish";
+				PRODUCT_BUNDLE_IDENTIFIER = "YulibarHusni.Cat-Just-Eat-Fish";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -338,12 +359,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LG953FVPQT;
-				INFOPLIST_FILE = "Cat Eat Fish/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Cat Just Eat Fish/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "YulibarHusni.Cat-Eat-Fish";
+				PRODUCT_BUNDLE_IDENTIFIER = "YulibarHusni.Cat-Just-Eat-Fish";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -353,7 +374,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B88016DE224B091800BC0A1E /* Build configuration list for PBXProject "Cat Eat Fish" */ = {
+		B88016DE224B091800BC0A1E /* Build configuration list for PBXProject "Cat Just Eat Fish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B88016F3224B091A00BC0A1E /* Debug */,
@@ -362,7 +383,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B88016F5224B091A00BC0A1E /* Build configuration list for PBXNativeTarget "Cat Eat Fish" */ = {
+		B88016F5224B091A00BC0A1E /* Build configuration list for PBXNativeTarget "Cat Just Eat Fish" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B88016F6224B091A00BC0A1E /* Debug */,
