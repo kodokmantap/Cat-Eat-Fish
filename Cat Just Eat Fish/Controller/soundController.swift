@@ -15,6 +15,8 @@ var gameplayMusic: AVAudioPlayer?
 var catLove: AVAudioPlayer?
 var catAngry: AVAudioPlayer?
 var ambienceSound: AVAudioPlayer?
+var endSound: AVAudioPlayer?
+var hiScoreSound: AVAudioPlayer?
 
 func buttonSound() {
     let audioFileURL = Bundle.main.url(forResource: "button_push", withExtension: "wav")
@@ -84,3 +86,24 @@ func startingMusic() {
     ambienceSound?.numberOfLoops = Int(FP_INFINITE)
 }
 
+func gameFinished() {
+    let audioFileURL = Bundle.main.url(forResource: "end", withExtension: "mp3")
+    do {
+        try endSound = AVAudioPlayer(contentsOf: audioFileURL!)
+        endSound?.volume = 1.5
+    } catch let error {
+        print(error.localizedDescription)
+    }
+    endSound?.play()
+}
+
+func newHiScoreSound() {
+    let audioFileURL = Bundle.main.url(forResource: "hiscore", withExtension: "mp3")
+    do {
+        try hiScoreSound = AVAudioPlayer(contentsOf: audioFileURL!)
+        hiScoreSound?.volume = 1.5
+    } catch let error {
+        print(error.localizedDescription)
+    }
+    hiScoreSound?.play()
+}

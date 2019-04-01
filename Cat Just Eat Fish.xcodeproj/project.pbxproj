@@ -21,6 +21,8 @@
 		B88016EC224B091800BC0A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88016EA224B091800BC0A1E /* Main.storyboard */; };
 		B88016EE224B091A00BC0A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B88016ED224B091A00BC0A1E /* Assets.xcassets */; };
 		B88016F1224B091A00BC0A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B88016EF224B091A00BC0A1E /* LaunchScreen.storyboard */; };
+		B89D5CDF2250D12000F8BE39 /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B89D5CDD2250D11F00F8BE39 /* end.mp3 */; };
+		B89D5CE02250D12000F8BE39 /* hiscore.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B89D5CDE2250D12000F8BE39 /* hiscore.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		B88016ED224B091A00BC0A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B88016F0224B091A00BC0A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B88016F2224B091A00BC0A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B89D5CDD2250D11F00F8BE39 /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end.mp3; sourceTree = "<group>"; };
+		B89D5CDE2250D12000F8BE39 /* hiscore.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hiscore.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		B84C134E224DF52E00F8AC43 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				B89D5CDD2250D11F00F8BE39 /* end.mp3 */,
+				B89D5CDE2250D12000F8BE39 /* hiscore.mp3 */,
 				B84C1357224DFFC600F8AC43 /* startingMusic.mp3 */,
 				B84C1354224DFF9800F8AC43 /* catLove.mp3 */,
 				B84C1353224DFF9800F8AC43 /* gameOver.mp3 */,
@@ -96,16 +102,24 @@
 			isa = PBXGroup;
 			children = (
 				B88016E6224B091800BC0A1E /* AppDelegate.swift */,
-				B88016E8224B091800BC0A1E /* ViewController.swift */,
-				B84C134F224DF54700F8AC43 /* soundController.swift */,
+				B89D5CE12251B77300F8BE39 /* Controller */,
 				B88016EA224B091800BC0A1E /* Main.storyboard */,
-				B84C1359224EA64C00F8AC43 /* GKTestViewController.swift */,
 				B88016ED224B091A00BC0A1E /* Assets.xcassets */,
 				B88016EF224B091A00BC0A1E /* LaunchScreen.storyboard */,
 				B88016F2224B091A00BC0A1E /* Info.plist */,
 				B84C134E224DF52E00F8AC43 /* sounds */,
 			);
 			path = "Cat Just Eat Fish";
+			sourceTree = "<group>";
+		};
+		B89D5CE12251B77300F8BE39 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B88016E8224B091800BC0A1E /* ViewController.swift */,
+				B84C134F224DF54700F8AC43 /* soundController.swift */,
+				B84C1359224EA64C00F8AC43 /* GKTestViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +187,7 @@
 			files = (
 				B88016F1224B091A00BC0A1E /* LaunchScreen.storyboard in Resources */,
 				B84C1352224DFD0400F8AC43 /* music-inGame.mp3 in Resources */,
+				B89D5CDF2250D12000F8BE39 /* end.mp3 in Resources */,
 				B84C1355224DFF9800F8AC43 /* gameOver.mp3 in Resources */,
 				B88016EE224B091A00BC0A1E /* Assets.xcassets in Resources */,
 				B84C134B224DF51600F8AC43 /* button_push.wav in Resources */,
@@ -180,6 +195,7 @@
 				B88016EC224B091800BC0A1E /* Main.storyboard in Resources */,
 				B84C1356224DFF9800F8AC43 /* catLove.mp3 in Resources */,
 				B84C1358224DFFC600F8AC43 /* startingMusic.mp3 in Resources */,
+				B89D5CE02250D12000F8BE39 /* hiscore.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

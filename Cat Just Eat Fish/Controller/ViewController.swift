@@ -41,6 +41,7 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
     
     @IBOutlet weak var gameOverScoreSessionOutlet: UILabel!
     @IBOutlet weak var gameOverHiScoreOutlet: UILabel!
+    @IBOutlet weak var leaderboardButtonOutlet: UIButton!
     
     @IBOutlet weak var catHeadOutlet: UIImageView!
     @IBOutlet weak var catPawOutletL: UIImageView!
@@ -59,7 +60,6 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         authenticateLocalPlayer()
-
         startingMusic()
         foodButtonOutlet.isHighlighted = true
         notFoodButtonOutlet.isHighlighted = true
@@ -76,11 +76,9 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
         
         animate()
         // Do any additional setup after loading the view.
-    
     }
     
     func animate() {
-        
         catHeadOutlet.frame.origin.y = 70
         catPawOutletL.frame.origin.y = 215
         catPawOutletR.frame.origin.y = 215
@@ -96,16 +94,15 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
         }, completion: nil)
     }
     
-    
-    
-    
     func restartgame() {
         print("restart Game")
         gameOverOutlet.isHidden = true
+        leaderboardButtonOutlet.isHidden = false
     }
     
     func gameStart() {
         
+        leaderboardButtonOutlet.isHidden = true
         isGameOver = false
         comboOutlet.isHidden = true
 
@@ -158,8 +155,10 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
     func gameOver() {
 
         catAngrySound()
+        gameFinished()
         gameplayMusic?.stop()
         
+        leaderboardButtonOutlet.isHidden = false
         isGameOver = true
         gameOverOutlet.isHidden = false
         foodButtonOutlet.isEnabled = false
@@ -178,6 +177,7 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
         } else {
             UserDefaults.standard.set(scoreSession, forKey: "hiScore")
             gameOverHiScoreOutlet.text = "\(scoreSession)-NEW!!"
+            newHiScoreSound()
             UpdateLeaderboard()
         }
 //        foodButtonOutlet.isHighlighted = true
@@ -260,7 +260,6 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
     }
     
     func comboCheck() {
-        
         switch numberOfCombo {
         case 0...2:
             print("no combo")
@@ -316,6 +315,7 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
         tapToPlayOutlet.isHidden = true
         startButtonSound()
         gameStart()
+        leaderboardButtonOutlet.isHidden = true
     }
     
     @IBAction func startupButton(_ sender: UIButton) {
@@ -340,6 +340,9 @@ class ViewController: UIViewController, GKGameCenterControllerDelegate {
     print("Best Score submitted to your Leaderboard!")
     }
     }
+        GKNotificationBanner.show(withTitle: "CONGRATULATION!", message: "your new hi-score has been submitted") {
+            print("banner")
+        }
     }
 
     
